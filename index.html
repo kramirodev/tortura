@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Tortura</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body onload="iniciar()">
+
+    <img src="Sem Título-2.png" class="fundo">
+
+    <div class="quadrado"></div>
+    <div class="antequadrado"><p class="anteriores" id="anteriorExercicio"></p></div>
+
+    <img src="Sem Título-1.png" class="emoji">
+    <img src="Sem Título-1.png" class="emoji2">
+
+    <p class="titulo1">
+        <b>QUAL SERÁ O MEU</b>
+    </p>
+
+    <p class="titulo2">
+        <b>SOFRIMENTO DE HOJE?!</b>
+    </p>
+
+    <div class = mobile></div>
+
+    <button onclick="clicar()" class="botao">Escolher exercício</button>
+    <button onclick="adicionar()" class="botao">Adicionar exercício</button>
+    <button onclick="remover()" class="botao">Remover exercício</button>
+    <button onclick="zerar()" class="botao">Apagar todos</button>
+
+    <div class="quadresultado">
+        <p class="resultado" id="resultadoExercicio"></p>
+    </div>
+</body>
+</html>

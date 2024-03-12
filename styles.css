@@ -1,0 +1,319 @@
+@media screen and (min-width: 769px) {
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
+    overflow: hidden;
+    margin: 0; /* Adicionado para remover margens padrão do corpo da página */
+  }
+
+  .emoji2{
+    display: none;
+  }
+  .fundo {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    filter: saturate(2) opacity(0.2);
+    z-index: -1;
+    left: -45%;
+  }
+
+  .emoji {
+    position: relative;
+    width: 12%;
+    height: auto;
+    left: 65%;
+    top:16.5vw;
+  }
+
+  .titulo1 {
+    position: absolute;
+    text-align: center;
+    bottom: 27.6vw;
+    left:61% ;
+    font-size:2vw;
+    width: 20vw;
+    animation: rotate 5s linear infinite;
+  }
+
+  .titulo2 {
+    position: absolute;
+    text-align: center;
+    bottom: 8.6vw;
+    left:61% ;
+    font-size:2vw;
+    width: 20vw;
+    animation: rotate 5s linear infinite;
+  }
+
+  .quadrado {
+    position: fixed;
+    height: 100%;
+    left: 55%;
+    width: 32vw;
+    background-color: white;
+  }
+
+  .antequadrado {
+    position: fixed;
+    left: 87%;
+    background-color: #0079a0;
+    height: 100%;
+    width: 13vw;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Adiciona um overflow: hidden para cortar o texto além dos limites do antequadrado */
+  }
+
+  #anteriorExercicio {
+    font-size: 1vw;
+    color: white;
+    max-width: 90%; /* Limita a largura máxima do texto ao tamanho do antequadrado */
+  }
+
+  button{
+    background-color: #0078a000;
+    color: #ffffff;
+    padding: 1.04vw 2.08vw; /* Convertido de pixels para vw */
+    font-size: 1vw; /* Convertido de pixels para vw */
+    border: none;
+    border-radius: 0.26vw; /* Convertido de pixels para vw */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position:relative;
+    left: 2%;
+    bottom:6vw;
+    border: dotted;
+    animation: cor 1s linear infinite;
+  }
+
+  button:hover {
+    background-color: #00000050; /* Cor um pouco mais escura ao passar o mouse */
+  }
+
+  .quadresultado{
+    border-radius: 3vw;
+    position: fixed;
+    background-color: #0078a000;
+    bottom: 3.5vw;
+    height: 30vw;
+    width: 50.7vw;
+    left: 2%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Adiciona um overflow: hidden para cortar o texto além dos limites do antequadrado */
+    ;
+    border: dotted;
+    animation: scale 2s linear infinite;
+  }
+
+  #resultadoExercicio{
+    font-size: 1.3vw;
+    color: white;
+    max-width: 90%; /* Limita a largura máxima do texto ao tamanho do antequadrado */
+    animation: cor 1s linear infinite
+  }
+
+  @keyframes scale{
+    0%{
+      transform:scale(0.8);
+      color:rgb(255, 0, 0)
+    }
+    50%{
+      transform: scale(1);
+      color:rgb(0, 255, 251);
+    }
+    100%{
+      transform:scale(0.8);
+      color:rgb(255, 0, 0);
+    }
+  }
+
+  @keyframes cor{
+    0%{
+      color:rgb(255, 0, 0)
+    }
+    50%{
+      color:rgb(0, 255, 251);
+    }
+    100%{
+      color:rgb(255, 0, 0);
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color:#feffff;
+    overflow: hidden;
+    margin: 0;
+    background-image:url(Sem\ Título-3.png);
+    background-size:130vw;
+    background-position-x:25% ;
+}
+.fundo{
+  display: none;
+}
+
+.mobile{
+  position: fixed;
+  background-color: #00b2d5;
+  width: 100%;
+  height: 20vw;
+  top:5vh;
+  border-radius:10vw;
+}
+
+.emoji {
+  z-index: 2;
+  position: fixed;
+  width: 10%;
+  height: auto;
+  left: 5%;
+  bottom: 88vh;
+}
+
+.emoji2{
+  z-index: 2;
+  position: fixed;
+  width: 10%;
+  height: auto;
+  left: 86%;
+  bottom: 88vh;
+  transform:scaleX(-1)
+}
+
+.titulo1 {
+  z-index: 2;
+  color:aliceblue;
+  position:fixed;
+  top: 13vw;
+  text-align: center;
+  left:31.5%;
+}
+
+.titulo2 {
+  color:aliceblue;
+  z-index: 2;
+  position: absolute;
+  text-align: center;
+  font-size: 5vw;
+  top:15vw;
+  left:19%;
+}
+
+.antequadrado {
+  border-radius: 4vw;
+  position: fixed;
+  top:16vh ;
+  left: 65%;
+  background-color: #00b2d5;
+  height: 80%;
+  width: 30vw;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Adiciona um overflow: hidden para cortar o texto além dos limites do antequadrado */
+}
+
+#anteriorExercicio {
+  font-size: 2.5vw;
+  color: white;
+  max-width: 90%; /* Limita a largura máxima do texto ao tamanho do antequadrado */
+}
+
+button{
+  width: 60vw;
+  height: 20vw;
+  left: 2vw;
+  top: 33vw;
+  background-color: #00000000;
+  color: #00b2d5;
+  padding: 1.04vw 2.08vw; /* Convertido de pixels para vw */
+  border: dotted;
+  border-radius: 0.26vw; /* Convertido de pixels para vw */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position:relative;
+  border-radius: 10vw;
+  font-size: 4vw;
+  margin-top: 3vw;
+  animation: cor 1s linear infinite
+}
+
+button:hover {
+  background-color: #7fdbff18; /* Cor um pouco mais escura ao passar o mouse */
+}
+
+.quadresultado{
+  border-radius: 3vw;
+  position: fixed;
+  background-color: #0078a000;
+  color: #00b2d5;
+  bottom: 10vw;
+  left: 2vw;
+  height: 75vw;
+  width: 58vw;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Adiciona um overflow: hidden para cortar o texto além dos limites do antequadrado */
+  border: dotted;
+  animation: scale 2s linear infinite;
+}
+
+#resultadoExercicio{
+  font-size: 5vw;
+  color: #00b2d5;
+  max-width: 90%; /* Limita a largura máxima do texto ao tamanho do antequadrado */
+  animation: cor 1s linear infinite
+}
+
+@keyframes cor{
+  0%{
+    color: rgb(255, 68, 0);
+  }
+  50%{
+    color: rgb(0, 234, 255);
+  }
+  100%{
+    color: rgb(255, 0, 51);
+  }
+}
+
+@keyframes scale{
+  0%{
+    transform:scale(0.8);
+    color:rgb(255, 0, 0)
+  }
+  50%{
+    transform: scale(1);
+    color:rgb(0, 255, 251);
+  }
+  100%{
+    transform:scale(0.8);
+    color:rgb(255, 0, 0);
+  }
+}
+}
+/*
+@keyframes rotate{
+  0%{
+    transform: rotate(-5deg) scale(0.4);
+    color: rgb(255, 255, 255);
+  }
+  50%{
+    transform: rotate(var(--rotation-angle)) scale(3);
+    color: rgb(0, 255, 255);
+  }
+  100%{
+    transform:rotate(-5deg) scale(0.4);
+    color: rgb(255, 255, 255);
+  }
+}
